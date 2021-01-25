@@ -1,0 +1,49 @@
+@font-face{
+    font-family:"Helvetica Extended Medium";
+    src: url("../fonts/Helvetica Extended Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    font-stretch:expanded;
+  }
+.nav{
+    background-color: white;
+    border-top:rgb(0, 0, 200) solid 4px;
+    margin: 55px 58.5px 0px 58.5px;
+    display:flex; height:87px; 
+
+}
+.nav .title{width:480px; background-color: #fff; }
+.nav .title a{
+    text-align: left; height:80px;
+    font-stretch: expanded;
+    font-size: 65px; font-family: "Helvetica Extended Medium";
+    letter-spacing:-1px; color:rgb(0, 0, 200); font-weight: 600;
+}
+.nav .links{
+    width:100%;
+    text-align: center;
+    position: relative; text-align: right;
+}
+.links .control{
+    position:absolute; right: 0px; top:20px; width:800px;
+    text-align: center; display:grid; grid-template-columns: repeat(5,160px);
+}
+.control .link{
+    display: inline-block; position:relative;
+    padding:0px 13px; font-size: 22px; 
+    color:rgb(83, 83, 83); font-weight: 600;
+    border-right: rgb(200, 200, 200) 2px solid;
+}
+.control .link:hover{color:black;}
+.control .link:after{
+    content:""; width:0%; height: 1.7px; position:absolute; background: rgba(220, 220, 220, 0.705);
+    left:50%; transform: translateX(-50%); transition: all 0.5s; bottom:-4px;
+}
+.control .link:hover:after,.control .link:focus:after{
+    width:65%; 
+}
+
+.control .link:nth-child(5){
+    border-right: none;
+}
+

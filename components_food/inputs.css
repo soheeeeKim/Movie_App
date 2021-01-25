@@ -1,0 +1,15 @@
+.inputBox{text-align: left; font-size: 26px; position:relative;}
+.inputBox .topMessage{margin-bottom: 8px;color:rgb(70, 70, 70); font-weight: bold; }
+.inputBox .Box{margin-bottom: 15px;}
+.Box input{
+    height:45px; width:100%;
+}
+.inputBox .message{
+    font-size: 16px; color:red; margin-bottom: 11px;  
+    position: absolute;
+    right:0px;
+}
+.Box input{
+    background-color: rgb(240, 240, 240); border: none;
+    border-radius: 6px; padding: 0px 7px;
+}
